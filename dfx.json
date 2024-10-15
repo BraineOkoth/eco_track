@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "eco_track_backend": {
+      "main": "src/eco_track_backend/main.mo",
+      "type": "motoko"
+    },
+    "eco_track_frontend": {
+      "dependencies": [
+        "eco_track_backend"
+      ],
+      "source": [
+        "src/eco_track_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "eco_track_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
